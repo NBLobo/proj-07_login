@@ -87,12 +87,12 @@ class Clogui:
                     self.janela1_ativa = True
                     layout1 = [
                         [sg.Text(
-                            f'Bem Vindo {login}, login realizado com sucesso!')],
-                        [sg.Button('Logout do Usuário')]
+                            f'{login}, voce esta logado.')],
+                        [sg.Button('Logout')]
                     ]
                     janela1 = sg.Window('Logout', layout1, font="Helvetica 14")
                     eventos1, valores1 = janela1.read()
-                    if eventos1 == sg.WINDOW_CLOSED or 'Logout do Usuário':
+                    if eventos1 == sg.WINDOW_CLOSED or 'Logout':
                         janela1.close()
                         self.janela.un_hide()
                         self.limpar(valores['login'], valores['senha'])
