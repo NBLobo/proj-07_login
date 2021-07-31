@@ -87,7 +87,7 @@ class Clogui:
                     self.janela1_ativa = True
                     layout1 = [
                         [sg.Text(
-                            f'{login}, voce esta logado.')],
+                            f'{login}, voce esta logado(a).')],
                         [sg.Button('Logout')]
                     ]
                     janela1 = sg.Window('Logout', layout1, font="Helvetica 14")
