@@ -14,10 +14,13 @@ def exibir_menu():
 Escolha uma Opção:
 [1] Cadastrar novo usuário
 [2] Fazer login
-[3] Sair    
+[3] Sair ou digite Enter    
 ''')
-    opcao = int(input('Digite sua opção: '))
-    return(opcao)
+    try:
+        opcao = int(input('Digite sua opção: '))
+        return(opcao)
+    except ValueError:
+        print()
 
 # Fazer login com nome e senha do usuário
 
